@@ -1,8 +1,8 @@
 services:
   app:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    image: nikover/devops-for-programmers-project-74:0.0.1
     working_dir: /app
-    volumes:
-      - ./app:/app
     command: make test
-    
