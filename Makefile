@@ -7,7 +7,7 @@ setup:
 	docker compose run --rm app make setup
 
 # Запуск тестов
-ci:
+test:
 	docker compose -f docker-compose.yml up --abort-on-container-exit --exit-code-from app
 
 # Остановка и очистка
