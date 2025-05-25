@@ -1,4 +1,4 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/nikvoblikov/devops-for-programmers-project-74/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/nikvoblikov/devops-for-programmers-project-74/actions)
 
-![CI Status](https://github.com/твой-username/твой-репозиторий/actions/workflows/push.yml/badge.svg)
+![CI Status](https://github.com/nikvoblikov/devops-for-programmers-project-74/actions/workflows/push.yml/badge.svg)
