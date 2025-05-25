@@ -3,6 +3,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.prod
-    image: nikover/devops-for-programmers-project-74:0.0.1
+    image: nikover/devops-for-programmers-project-74
     working_dir: /app
     command: make test
