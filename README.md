@@ -13,6 +13,7 @@
 Для деплоя: аккаунт на Docker Hub (для GitHub Actions).
 
 ## Структура проекта
+
 ```
 ├── .github/workflows/push.yml   # CI/CD
 ├── docker-compose.yml           # Основной конфиг
@@ -61,6 +62,7 @@ DATABASE_NAME=
 DATABASE_USERNAME=
 DATABASE_PASSWORD=
 DATABASE_PORT=
+DATABASE_HOST=
 ```
 
 ## Production-сборка
