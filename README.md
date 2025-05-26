@@ -13,7 +13,7 @@
 Для деплоя: аккаунт на Docker Hub (для GitHub Actions).
 
 ## Структура проекта
-
+```
 ├── .github/workflows/push.yml   # CI/CD
 ├── docker-compose.yml           # Основной конфиг
 ├── docker-compose.override.yml  # Dev-конфиг
@@ -22,6 +22,7 @@
 ├── Makefile                     # Управление задачами
 ├── app                          # Папка с приложением
 └── services/caddy/Caddyfile     # Конфиг Caddy
+```
 
 ## Локальный запуск (development)
 
@@ -30,6 +31,11 @@
 ```bash
 git clone git@github.com:nikvoblikov/devops-for-programmers-project-74.git
 cd devops-for-programmers-project-74
+```
+
+Установите зависимости
+```bash
+make setup
 ```
 
 Запустите сервисы (app + Caddy + db):
@@ -55,8 +61,8 @@ DATABASE_NAME=
 DATABASE_USERNAME=
 DATABASE_PASSWORD=
 DATABASE_PORT=
-DATABASE_HOST=
 ```
+
 ## Production-сборка
 
 Выполняется командами:

@@ -4,7 +4,7 @@ up:
 
 # Установка зависимостей
 setup:
-	docker compose run --rm app make setup
+	docker compose run --rm app make install
 
 # Запуск тестов
 test:
@@ -13,3 +13,8 @@ test:
 # Остановка и очистка
 down:
 	docker compose down
+
+# Создание  .env файла и примера
+env:
+	cp .env.example .env
+	@echo "✅ .env created from .env.example"
