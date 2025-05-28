@@ -4,7 +4,7 @@ services:
       context: .
       dockerfile: Dockerfile.prod
     image: nikover/devops-for-programmers-project-74
-    command: make test
+    command: bash -c 'sleep 3 && npm test'
     environment:
       DATABASE_HOST: ${DATABASE_HOST:-db}
       DATABASE_PORT: ${DATABASE_PORT:-5432}
