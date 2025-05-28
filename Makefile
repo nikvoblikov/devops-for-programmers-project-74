@@ -16,5 +16,5 @@ down:
 
 # Создание  .env файла и примера
 env:
-	cp .env.example .env
-	@echo "✅ .env created from .env.example"
+    cp -n .env.example .env || true
+	@echo "✅ .env checked (created if not exists)"
